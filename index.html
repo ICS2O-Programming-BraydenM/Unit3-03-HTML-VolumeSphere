@@ -3,47 +3,41 @@
   <head>
 <!-- metadata -->
     <meta charset="utf-8">
-    <meta name="description" content="Volume of Right Triangular Prism, with JavaScript">
+    <meta name="description" content="Volume of Sphere">
     <meta name="keywords" content="immaculata, ics2o">
-    <meta name="author" content="Ms Raffin">
+    <meta name="author" content="Brayden MacMillan">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="./fav_index/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./fav_index/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./fav_index/favicon-16x16.png">
     <link rel="manifest" href="./fav_index/site.webmanifest">
+<!-- Link to CSS file -->
     <link rel="stylesheet" href="./css/style.css">
     <title>Volume of a Sphere in JS</title>
   </head>
   <body>
-    <center>
-<!-- adding a JavaScript button -->
     <script src="./js/script.js"></script>
-    <h1>Volume of a Sphere in JS</h1>
-		<table>
-			<tr>
-				<td>
-					<h3>Enter the dimensions of your sphere:</h3>
-					<form action="javascript:calcVolume()">
-						<label for="side-a">Side a (m):</label>
-						<input type="number" step="any" id="side-a" placeholder="Enter side a (m)"><br><br>
-						<label for="side-b">Side b (m):</label>
-						<input type="number" step="any" id="side-b" placeholder="Enter side b (m)"><br><br>
-						<label for="height">Height (m):</label>
-						<input type="number" step="any" id="height" placeholder="Enter height (m)"><br><br>
-						<input type="submit" value="Calculate Volume">
-					</form>
-				</td>
-				<td width=45%>
-<!-- adding an image -->
-					<img src="./images/sphere3.png" alt="Sphere" width="85%" height="auto"/>
-				</td>
-			</tr>
-		</table>
-		<!-- Create a space where the user information will be displayed -->
-		<div id="display-results">
-			<div id="volume">
-      </div>
-    </center>
+    <center>  
+      <h1 style="background-color:red">Volume of a sphere in JS</h1>
+<!-- adding a JS button -->    
+    <h3>Please enter the length of the radius of the sphere below:</h3>
+    <form action="javascript:calculateSphere()">
+      <label for="Radius">Length of Radius of Sphere (in cm):</label>
+      <input type="number" step="0.01" min="0" id="radius" placeholder="Radius"><br><br>
+      <input type="submit" value="Calculate Volume">
+      </form>
+
+<!-- Create a space where the user information will be displayed -->
+  <div id="volume">
+  </div>
+    </p>
+    <br>
+    <br>
+    <br>
+      <!-- adding an image -->
+      <img src="./images/sphere3.png" width="700">
+  
+     </center>
   </body>
 </html>

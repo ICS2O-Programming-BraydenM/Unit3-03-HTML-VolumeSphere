@@ -1,23 +1,19 @@
-// Copyright (c) 2022 Brayden MacMillan All rights reserved
 // Created by: Brayden MacMillan
 // Created on: April 2022
 // This file contains the JS functions for index.html
 
 "use strict"
 
-/**
- * This function calculates area and perimeter of rectangle.
- */
-function calcVolume () {
+ // This function calculates volume of sphere.
+ 
+function calculateSphere () {
   // get user input
-  let side_a = parseFloat(document.getElementById("side-a").value)
-	let side_b = parseFloat(document.getElementById("side-b").value)
-	let height = parseFloat(document.getElementById("height").value)
-
+  let radius = parseFloat(document.getElementById('radius').value)
 
   // calculate the volume
-  let volume = (1/6) * side_a * side_b * height
+  let volume = radius ** 3 * (4 / 3) * Math.PI
 
   // display the results
-  document.getElementById("volume").innerHTML = "The volume is " + volume.toFixed(2) + "m<sup>3</sup>"
+ 
+document.getElementById('volume').innerHTML = "The volume will be " + volume.toFixed(2) + " cm³"
 }
